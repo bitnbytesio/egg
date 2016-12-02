@@ -1,0 +1,50 @@
+{
+  "name": "egg.js",
+  "version": "1.0.1",
+  "description": "node.js mvc framework",
+  "main": "server.js",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "bookshelf": "^0.10.2",
+    "async": "^2.1.2",
+    "dotenv": "^2.0.0",
+    "egg-framework": "^1.0.0",
+    "ejs": "^2.5.2",
+    "knex": "^0.12.6",
+    "mysql": "^2.12.0",
+    "node-session": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artisangang/egg.git"
+  },
+  "keywords": [
+    "egg",
+    "framework",
+    "mvc",
+    "node",
+    "javascript",
+    "js",
+    "framework"
+  ],
+  "author": {
+    "name": "Harcharan Singh",
+    "email": "artisangang@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artisangang/egg/issues"
+  },
+  "homepage": "https://github.com/artisangang/egg#readme",
+  "readme": "# egg framework\n\n**Note:** Application is under development. \n\n**Requirements**\nNode.js 4+\n\n**Templates**\n\nsee [EJS](http://www.embeddedjs.com/)\n\n**Database/ORM**\n\nsee [Bookshelf](http://bookshelfjs.org/)\n\n**Session**\n\nsee [quorrajs/NodeSession](https://github.com/quorrajs/NodeSession)\n\n\n**Quick Start**\n\nRun the folowing command in root directory of project.\n```\nnode server.js\n```",
+  "readmeFilename": "README.md",
+  "gitHead": "265232eaa4f0918fe648918ce76b78f6d8b1e7dd",
+  "_id": "egg.js@1.0.0",
+  "_shasum": "e40ff62505896242434ce91c9a9f8082515e7e89",
+  "_from": "egg.js@latest"
+}

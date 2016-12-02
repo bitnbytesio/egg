@@ -1,0 +1,32 @@
+process._basePath = __dirname;
+
+// load env file
+require('dotenv').config();
+
+// include egg module
+var egg = require('egg-framework');
+
+process.on('uncaughtException', function(err) {
+    log.error(err.stack);
+});
+
+process.on('warning', function (warning) {
+    log.warn(warning.stack);
+})
+
+
+var cli = require('commander');
+
+var migrate = egg.import('migrate');
+
+migrate._init(cli);
+
+// load cli routes
+var commands = require(process._basePath + '/routes/cli');
+
+commands._init(cli);
+
+cli.parse(process.argv);
+
+
+
